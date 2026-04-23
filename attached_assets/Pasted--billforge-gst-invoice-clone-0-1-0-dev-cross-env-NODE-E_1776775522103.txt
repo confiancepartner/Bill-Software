@@ -1,0 +1,40 @@
+> billforge-gst-invoice-clone@0.1.0 dev
+> cross-env NODE_ENV=development node server.js
+
+◇ injected env (18) from .env // tip: ⌘ enable debugging { debug: true }
+Error: Duplicate entry 'superadmin@billforge.local' for key 'email'
+    at <unknown> (E:\Aditi-Work\billforge-local\server.js:515:24)
+    at async withTransaction (E:\Aditi-Work\billforge-local\server\db.js:23:20)
+    at async seedDemoData (E:\Aditi-Work\billforge-local\server.js:450:5)
+    at async (E:\Aditi-Work\billforge-local\server.js:684:3) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sql: 'INSERT INTO users (client_id, company_id, branch_id, full_name, email, password_hash, role, status)\n' +
+    '         VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+  sqlState: '23000',
+  sqlMessage: "Duplicate entry 'superadmin@billforge.local' for key 'email'"
+}
+ ⨯ unhandledRejection: Error: Duplicate entry 'superadmin@billforge.local' for key 'email'
+    at <unknown> (E:\Aditi-Work\billforge-local\server.js:515:24)
+    at async withTransaction (E:\Aditi-Work\billforge-local\server\db.js:23:20)
+    at async seedDemoData (E:\Aditi-Work\billforge-local\server.js:450:5)
+    at async (E:\Aditi-Work\billforge-local\server.js:684:3) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sql: 'INSERT INTO users (client_id, company_id, branch_id, full_name, email, password_hash, role, status)\n' +
+    '         VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+  sqlState: '23000',
+  sqlMessage: "Duplicate entry 'superadmin@billforge.local' for key 'email'"
+}
+ ⨯ unhandledRejection:  Error: Duplicate entry 'superadmin@billforge.local' for key 'email'
+    at <unknown> (E:\Aditi-Work\billforge-local\server.js:515:24)
+    at async withTransaction (E:\Aditi-Work\billforge-local\server\db.js:23:20)
+    at async seedDemoData (E:\Aditi-Work\billforge-local\server.js:450:5)
+    at async (E:\Aditi-Work\billforge-local\server.js:684:3) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sql: 'INSERT INTO users (client_id, company_id, branch_id, full_name, email, password_hash, role, status)\n' +
+    '         VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+  sqlState: '23000',
+  sqlMessage: "Duplicate entry 'superadmin@billforge.local' for key 'email'"
+}
